@@ -30,7 +30,8 @@ TODO
 
 二叉树：每个节点有至多2个分叉的树。
 满二叉树（Full Binary Tree）：A binary tree T is full if each node is either a leaf or possesses exactly two child nodes.
-完全二叉树（Complete Binary Tree）：A binary tree T with n levels is complete if all levels except possibly the last are completely full,and the last level has all its nodes to the left side. 深度为K的完全二叉树，每个叶节点的深度只能为K或K-1，且要么只缺失右孩子或者左右孩子都缺失
+完全二叉树（Complete Binary Tree）：A binary tree T with n levels is complete if all levels except possibly the last are completely full,
+and the last level has all its nodes to the left side. 深度为K的完全二叉树，每个叶节点的深度只能为K或K-1，且要么只缺失右孩子或者左右孩子都缺失
 （把一颗二叉树按照从上到下，从左到右的顺序构建，就是一个完全二叉树）
 完美二叉树（Perfect Binary Tree）：A binary tree with all leaf nodes at the same depth. All internal nodes have degree 2.
 二叉搜索树：又叫二叉排序树、二叉查找树、有序二叉树（Ordered Binary Tree）、排序二叉树（Sorted Binary Tree），是指一颗空树或者具有下列性质的二叉树：
@@ -38,7 +39,7 @@ TODO
 左子树上所有节点的值均小于它的根节点的值；
 右子树上所有节点的值均大于它的根节点的值；
 以此类推：左右子树也分别是二叉搜索树
-※ 二叉搜索树特性：中序遍历为升序排列；访问、查找、插入、删除都是 $O(\log{n})$ 的复杂度
+※ 二叉搜索树特性：中序遍历为升序排列；访问、查找、插入、删除都是 O(logn) 的复杂度
 
 ※ 二叉搜索树Demo：https://visualgo.net/zh/bst
 
