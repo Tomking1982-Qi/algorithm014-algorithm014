@@ -129,11 +129,11 @@ insert (create): O(logN) or O(1)
 
 连通图个数：[200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
 
-拓扑排序：拓扑排序的实现方法以及环路检测，207. 课程表
+拓扑排序：[拓扑排序的实现方法以及环路检测](https://zhuanlan.zhihu.com/p/34871092)，[207 课程表](https://leetcode-cn.com/problems/course-schedule/)
 
-最短路径：Dijkstra
+最短路径：[Dijkstra](https://www.bilibili.com/video/av25829980?from=search&seid=13391343514095937158)
 
-最小生成树：Minimum Spanning Tree
+最小生成树：[Minimum Spanning Tree](https://www.bilibili.com/video/av84820276?from=search&seid=17476598104352152051)
 
 ## 题型记录：
 Week01-Day01
