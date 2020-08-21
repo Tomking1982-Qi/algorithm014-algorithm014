@@ -8,8 +8,7 @@
 4、Test (多case 测试)
 
 ## 心得体会：
-参加训练营两个礼拜了快（加上之前一个礼拜的网课），感觉自己还是进步蛮大的。虽然还不能独立完成一些生疏的题目。不过对已有的题目理解和记忆还是比以前好多了。这里非常感谢覃超老师给我们分享的解题思路（方法论），特别是五毒神掌，真得非常神奇。在这周的学习中，特别感觉到每道题的解题思路非常重要，掌握了解题思路等于掌握了解题的命脉；其次对于自己会做题目中出现的关键代码语句的深刻理解（期间有比较、优化、画图），也非常有助于深刻记忆和掌握理解相关提醒。加油！！！
-总之，五毒神掌 + 脑图 + 示图分析（自己推敲或者画出来，或者优秀题解分析的示例）是自己刷题是否有成效的关键
+TODO
 
 ## Tips:
 # 1、哈希表，映射，集合（实现与特性）
@@ -114,7 +113,7 @@ insert (create): O(logN) or O(1)
 
 删除堆顶元素 O(logN)：删除堆顶元素后，将堆尾元素替换到顶部，然后以此从根部下调整个堆的结构。（注意，若同时小于左右儿子，则需要和左右儿子中更大的一个进行交换）（Sift Down）
 
-代码：[堆的实现](https://shimo.im/docs/Lw86vJzOGOMpWZz2/read/)
+代码：[堆的实现](https://shimo.im/docs/Lw86vJzOGOMpWZz2/read)
 ```
 # 4. 图
 图：Graph(V, E)。顶点的属性：度（入度/出度）；边的属性：有向/无向、权重。
@@ -136,29 +135,32 @@ insert (create): O(logN) or O(1)
 最小生成树：[Minimum Spanning Tree](https://www.bilibili.com/video/av84820276?from=search&seid=17476598104352152051)
 
 ## 题型记录：
-Week01-Day01
-爬楼梯：leetcode-70
-https://leetcode-cn.com/problems/climbing-stairs/
+Week01-Day08
+两个数组的交集 II ：leetcode-350
+https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/
 
-Week01-Day02
-加一：leetcode-66
-https://leetcode-cn.com/problems/plus-one/
+Week01-Day09
+删除最外层的括号：leetcode-1021
+https://leetcode-cn.com/problems/remove-outermost-parentheses/
 
-Week01-Day03
-两数之和：leetcode-1
-https://leetcode-cn.com/problems/two-sum/
+Week01-Day10
+TODO
+滑动窗口的最大值：leetcode- 剑指 Offer 59 - I
+https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/
 
-Week01-Day04
-两两交换链表中的节点：leetcode-24
-https://leetcode-cn.com/problems/swap-nodes-in-pairs
+Week01-Day11
+Fizz Buzz：leetcode-412
+https://leetcode-cn.com/problems/fizz-buzz/
 
-Week01-Day05
-合并两个有序链表：leetcode-21
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
+Week01-Day12
+各位相加：leetcode-258
+https://leetcode-cn.com/problems/add-digits/
 
-Week01-Day06
-猜数字游戏：leetcode-299
-https://leetcode-cn.com/problems/bulls-and-cows/
+Week01-Day13
+
+
+Week01-Day13
+
 
 
 
