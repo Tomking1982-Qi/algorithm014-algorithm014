@@ -92,9 +92,9 @@ public static void postOrderRecur(TreeNode head) {
 }
 ```
 ## 3. 堆，二叉堆
-```
-堆（Heap）：可以迅速找到一堆数中最大或者最小值的数据结构。(Wikepedia: Heap)
 
+堆（Heap）：可以迅速找到一堆数中最大或者最小值的数据结构。(Wikepedia: Heap)
+```
 根节点最大的堆叫做大顶堆，根节点最小的堆叫做小顶堆。常见的堆有二叉堆，斐波那契堆等。
 
 （大顶）堆的常见API有：
@@ -115,9 +115,9 @@ insert (create): O(logN) or O(1)
 插入元素 O(logN)：将新元素放进最后一个空位的叶子节点，然后和它的父节点进行比较，如果大于/小于父节点，则将它与父节点进行交换。继续进行该操作直到不满足条件。（Sift Up）
 
 删除堆顶元素 O(logN)：删除堆顶元素后，将堆尾元素替换到顶部，然后以此从根部下调整个堆的结构。（注意，若同时小于左右儿子，则需要和左右儿子中更大的一个进行交换）（Sift Down）
-
-代码：[堆的实现](https://shimo.im/docs/Lw86vJzOGOMpWZz2/read)
 ```
+代码：[堆的实现](https://shimo.im/docs/Lw86vJzOGOMpWZz2/read)
+
 ## 4. 图
 图：Graph(V, E)。顶点的属性：度（入度/出度）；边的属性：有向/无向、权重。
 
