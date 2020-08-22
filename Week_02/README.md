@@ -23,13 +23,13 @@ TODO
 哈希表的查找/插入/删除时间复杂度皆为O(1)
 
 ## 1、树，二叉树，二叉搜索树
-```
-加速数据结构的关键在于升维（比如链表->跳表）
 
+加速数据结构的关键在于升维（比如链表->跳表）
 树：就相当于是一个二维的链表，每个节点除了自己，都指向另外的两个元素。
 ※ 树和图的区别：如果有环，按照定义就不称为树，但可以是图。
 ※ 可以说，链表是特殊的树，树是特殊的图。
 
+```
 二叉树：每个节点有至多2个分叉的树。
 满二叉树（Full Binary Tree）：A binary tree T is full if each node is either a leaf or possesses exactly two child nodes.
 完全二叉树（Complete Binary Tree）：A binary tree T with n levels is complete if all levels except possibly the last are completely full,
@@ -93,10 +93,11 @@ public static void postOrderRecur(TreeNode head) {
 ```
 ## 3. 堆，二叉堆
 
-堆（Heap）：可以迅速找到一堆数中最大或者最小值的数据结构。(Wikepedia: Heap)
-```
+堆（Heap）：可以迅速找到一堆数中最大或者最小值的数据结构。
+
 根节点最大的堆叫做大顶堆，根节点最小的堆叫做小顶堆。常见的堆有二叉堆，斐波那契堆等。
 
+```
 （大顶）堆的常见API有：
 
 find-max: O(1)
@@ -127,6 +128,7 @@ insert (create): O(logN) or O(1)
 图的BFS递归：
 注意：图在dfs/bfs遍历时，一定要存visited矩阵（因为不像树，图可能存在环路）
 
+```
 图的高级算法：
 
 连通图个数：[200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/)
@@ -136,6 +138,7 @@ insert (create): O(logN) or O(1)
 最短路径：[Dijkstra](https://www.bilibili.com/video/av25829980?from=search&seid=13391343514095937158)
 
 最小生成树：[Minimum Spanning Tree](https://www.bilibili.com/video/av84820276?from=search&seid=17476598104352152051)
+```
 
 ## 题型记录：
 Week01-Day08
