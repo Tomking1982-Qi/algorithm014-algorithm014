@@ -73,13 +73,13 @@ public static void preOrderRecur(TreeNode head) {
     preOrderRecur(head.right);
 }
 # 中序遍历
-public static void preOrderRecur(TreeNode head) {
+public static void InOrderRecur(TreeNode head) {
     if (head == null) {
         return;
     }
-    preOrderRecur(head.left);
+    InOrderRecur(head.left);
     System.out.print(head.value + " ");
-    preOrderRecur(head.right);
+    InOrderRecur(head.right);
 }
 # 后序遍历
 public static void postOrderRecur(TreeNode head) {
