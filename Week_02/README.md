@@ -103,7 +103,7 @@ public static void postOrderRecur(TreeNode head) {
 find-max: O(1)
 delete-max: O(logN)
 insert (create): O(logN) or O(1)
-※ 二叉堆性质：1. 是一颗完全树。2. 树中任意系节点值总是 >= 其子节点的值。
+※ 二叉堆性质：1. 是一颗完全树。2. 树中任意节点值总是 >= 其子节点的值。
 
 二叉堆左右子节点索引计算方法：
 
