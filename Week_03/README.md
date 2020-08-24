@@ -25,33 +25,46 @@ D、频次问题：有下标或者范围的，可以用数组 group by(某个值
 
 ## Tips:
 1、递归
+  一个问题可以分解为相同性质的子问题就可以用递归实现。就拿DFS来说，问题本身和左子树，右子树这就是问题与子问题的关系。
+  递归求解独立重复子问题时是最有效的，若是重叠子问题一般用迭代（循环）来写,避免重复计算。
 a. 递归实现：
 ```
+递归本质上就是循环，通过循环体调用自己来进行循环（称为：通过函数体来进行的循环）。
 ```
 b. 递归特性
 ```
+* 向下进入到不同梦境中；向下又回到原来一层（不能跨层跳跃，一层一层下，一层一层回来，有对称性）
+* 通过声音（函数参数）同步回到上一层。
+* 每一层的环境和周围的人都是一份拷贝，主角等几个人穿越不同层级的梦境（发生和携带变化）
 ```
 c、递归思维要素
 ```
-1、不要人肉进行递归（最大误区）
-2、找到最近最简方法，将其拆解成可重复解决的问题（重复子问题）
+1、不要人肉进行递归, 抛弃递归状态树，可以基于函数直接写代码。（最大误区）
+2、找到 最近最简 方法，将其拆解成 可重复 解决的问题。（即：找 最近重复子 问题）
 3、数学归纳法思维
 ```
 d、递归常见适用模板
 ```
 // Java
 public void recur(int level, int param) { 
-  // terminator 
+  // recursion terminator 递归终结条件
   if (level > MAX_LEVEL) { 
     // process result 
     return; 
   }
-  // process current logic 
+  // process logic in current level 处理当前层逻辑
   process(level, param); 
-  // drill down 
+  // drill down 下探到下一层
   recur( level: level + 1, newParam); 
-  // restore current status 
+  // reverse/restore the current level status, if needed 清理当前层(全局变量)
 }
+个人觉得：第二和第三步骤有时会颠倒的，比如求树的最小深度问题。
+if (root == null) {
+    return 0;
+}
+int minLeft = minDepth(root.left);
+int minRight = minDepth(root.right);
+return (minLeft == 0 || minRight == 0) ? (minLeft + minRight + 1) : Math.min(minLeft, minRight) + 1;
 ```
 
 ## 题型记录：
