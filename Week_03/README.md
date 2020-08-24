@@ -19,11 +19,39 @@
 Free Note:
 A、看老外的题解，感觉，老外在玩 各种尝试，他们是在思考  怎么精辟 怎么多解题思路
 B、二叉树的 层续遍历 最重要的，就是对每次的循环，如果是BSF的话，就是对当前 栈Size的遍历（二叉树层序遍历，优先考虑BFS）
-C、
+C、logn复杂度，通常可以用二叉堆 或者 排序 SBT(二叉搜索树) 或者 二分查找 或者 排序 e.g. Arrays.sort();
+D、频次问题：有下标或者范围的，可以用数组 group by(某个值一样)统计频次；否则用Map group by(Key一样) 统计频次。
 ```
 
 ## Tips:
-
+1、递归
+a. 递归实现：
+```
+```
+b. 递归特性
+```
+```
+c、递归思维要素
+```
+1、不要人肉进行递归（最大误区）
+2、找到最近最简方法，将其拆解成可重复解决的问题（重复子问题）
+3、数学归纳法思维
+```
+d、递归常见适用模板
+```
+// Java
+public void recur(int level, int param) { 
+  // terminator 
+  if (level > MAX_LEVEL) { 
+    // process result 
+    return; 
+  }
+  // process current logic 
+  process(level, param); 
+  // drill down 
+  recur( level: level + 1, newParam); 
+  // restore current status 
+}
 ```
 
 ## 题型记录：
