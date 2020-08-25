@@ -69,10 +69,12 @@ return (minLeft == 0 || minRight == 0) ? (minLeft + minRight + 1) : Math.min(min
 
 ## 题型记录：
 Week01-Day15
-二叉树的中序遍历：leetcode-94
+二叉树的中序遍历: leetcode-94
 https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 
 Week01-Day16
+剑指 Offer 05: 替换空格 
+https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
 
 Week01-Day17
 
