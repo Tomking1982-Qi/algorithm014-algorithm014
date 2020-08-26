@@ -67,9 +67,11 @@ int minLeft = minDepth(root.left);
 int minRight = minDepth(root.right);
 return (minLeft == 0 || minRight == 0) ? (minLeft + minRight + 1) : Math.min(minLeft, minRight) + 1;
 ```
-2、分治（divide(split) & conquer） 、 回溯
+2、分治（divide(split) & conquer）| 回溯
+
 a、分治和回溯（一种递归的细分类）本质上就是递归（特殊的递归或复杂的递归）。还是去找重复性（最近的重复性（怎么构造怎么分解-分治 & 回溯），最优的重复性-动态规划）
 b、分治 常见适用模板
+c、
 ```
 // Java
 private static int divide_conquer(Problem problem, ) {
@@ -80,22 +82,22 @@ private static int divide_conquer(Problem problem, ) {
   }
   
   // process current problem
-      // prepare data 
-      data = prepare_data(problem) 
-      subProblems = split_problem(problem)
+       // prepare data 
+       data = prepare_data(problem) 
+       subProblems = split_problem(problem)
+  // drill down
+       // conquer subproblems
+       res0 = divide_conquer(subProblems[0])
+       res1 = divide_conquer(subProblems[1])
 
-      // conquer subproblems
-      res0 = divide_conquer(subProblems[0])
-      res1 = divide_conquer(subProblems[1])
-
-      // process and generate the final result (merge)
-      result = process_result(res0, res1);
+       // process and generate the final result (merge)
+       result = process_result(res0, res1);
   
   // revert the current level status
   return result;
 }
 ```
-[递归状态树](Week_03\split-conquer.png "split")
+[递归状态树](split-conquer.png "split")
 
 ## 题型记录：
 Week01-Day15
