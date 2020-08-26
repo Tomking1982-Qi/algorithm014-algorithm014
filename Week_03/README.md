@@ -95,7 +95,7 @@ private static int divide_conquer(Problem problem, ) {
   return result;
 }
 ```
-[递归状态树](split-conquer.png "split")
+[递归状态树](Week_03\split-conquer.png "split")
 
 ## 题型记录：
 Week01-Day15
