@@ -21,6 +21,7 @@ A、看老外的题解，感觉，老外在玩 各种尝试，他们是在思考
 B、二叉树的 层续遍历 最重要的，就是对每次的循环，如果是BSF的话，就是对当前 栈Size的遍历（二叉树层序遍历，优先考虑BFS）
 C、logn复杂度，通常可以用二叉堆 或者 排序 SBT(二叉搜索树) 或者 二分查找 或者 排序 e.g. Arrays.sort();
 D、频次问题：有下标或者范围的，可以用数组 group by(某个值一样)统计频次；否则用Map group by(Key一样) 统计频次。
+E、不管是递归、分治 、回溯， 本质上都是找重新性及分解问题和最后组合每个子问题的结果
 ```
 
 ## Tips:
@@ -66,6 +67,35 @@ int minLeft = minDepth(root.left);
 int minRight = minDepth(root.right);
 return (minLeft == 0 || minRight == 0) ? (minLeft + minRight + 1) : Math.min(minLeft, minRight) + 1;
 ```
+2、分治（divide(split) & conquer） 、 回溯
+a、分治和回溯（一种递归的细分类）本质上就是递归（特殊的递归或复杂的递归）。还是去找重复性（最近的重复性（怎么构造怎么分解-分治 & 回溯），最优的重复性-动态规划）
+b、分治 常见适用模板
+```
+// Java
+private static int divide_conquer(Problem problem, ) {
+  // recursion terminator 比如到达叶子节点
+  if (problem == NULL) {
+    int res = process_last_result();
+    return res;     
+  }
+  
+  // process current problem
+      // prepare data 
+      data = prepare_data(problem) 
+      subProblems = split_problem(problem)
+
+      // conquer subproblems
+      res0 = divide_conquer(subProblems[0])
+      res1 = divide_conquer(subProblems[1])
+
+      // process and generate the final result (merge)
+      result = process_result(res0, res1);
+  
+  // revert the current level status
+  return result;
+}
+```
+[递归状态树](split-conquer.png "split")
 
 ## 题型记录：
 Week01-Day15
@@ -77,8 +107,12 @@ Week01-Day16
 https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
 
 Week01-Day17
+剑指 Offer 06: 从尾到头打印链表
+https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
 
 Week01-Day18
+面试题68 - II：二叉树的最近公共祖先 
+https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/
 
 Week01-Day19
 
