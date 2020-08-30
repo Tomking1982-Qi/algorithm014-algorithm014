@@ -116,24 +116,27 @@ Week01-Day15
 https://leetcode-cn.com/problems/binary-tree-inorder-traversal/
 
 Week01-Day16
-剑指 Offer 05: 替换空格 
+替换空格: 剑指 Offer 05
 https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
 
 Week01-Day17
-剑指 Offer 06: 从尾到头打印链表
+从尾到头打印链表: 剑指 Offer 06
 https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof
 
 Week01-Day18
-面试题68 - II：二叉树的最近公共祖先 
+二叉树的最近公共祖先: 面试题68 - II：
 https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/
 
 Week01-Day19
 
-Week01-Day20
-二叉树的最大深度：leetcode-104
-https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/
 
-Week01-Day21
+Week01-Day20
+三数之和: leetcode-15
+https://leetcode-cn.com/problems/3sum/
+
+Week01-Day
+面试题 17.09: 第 k 个数
+https://leetcode-cn.com/problems/get-kth-magic-number-lcci/
 
 
 
