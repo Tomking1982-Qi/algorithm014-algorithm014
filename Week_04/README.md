@@ -33,90 +33,76 @@ E、不管是递归、分治 、回溯， 本质上都是找重新性及分解�
 ```
 
 ## Tips:
-### 1、递归
+### 1、DFS 代码模板
   一个问题可以分解为相同性质的子问题就可以用递归实现。就拿DFS来说，问题本身和左子树，右子树这就是问题与子问题的关系。
-  递归求解独立重复子问题时是最有效的，若是重叠子问题一般用迭代（循环）来写,避免重复计算。
-a. 递归实现：
-```
-递归本质上就是循环，通过循环体调用自己来进行循环（称为：通过函数体来进行的循环）。
-```
-b. 递归特性
-```
-* 向下进入到不同梦境中；向下又回到原来一层（不能跨层跳跃，一层一层下，一层一层回来，有对称性）
-* 通过声音（函数参数）同步回到上一层。
-* 每一层的环境和周围的人都是一份拷贝，主角等几个人穿越不同层级的梦境（发生和携带变化）
-```
-c、递归思维要素
-```
-1、不要人肉进行递归, 抛弃递归状态树，可以基于函数直接写代码。（最大误区）
-2、找到 最近最简 方法，将其拆解成 可重复 解决的问题。（即：找 最近重复子 问题）
-3、数学归纳法思维
-
-```
-d、递归常见适用模板
-```
-// Java
-public void recur(int level, int param) { 
-  // recursion terminator 递归终结条件
-  if (level > MAX_LEVEL) { 
-    // process result 
-    return; 
-  }
-  // process logic in current level 处理当前层逻辑
-  process(level, param); 
-  // drill down 下探到下一层
-  recur( level: level + 1, newParam); 
-  // reverse/restore the current level status, if needed 清理当前层(全局变量)
-}
-个人觉得：第二和第三步骤有时会颠倒的，比如求树的最小深度问题。
-if (root == null) {
-    return 0;
-}
-int minLeft = minDepth(root.left);
-int minRight = minDepth(root.right);
-return (minLeft == 0 || minRight == 0) ? (minLeft + minRight + 1) : Math.min(minLeft, minRight) + 1;
-```
-### 2、分治（divide(split) & conquer）| 回溯
-
-a、分治和回溯（一种递归的细分类）本质上就是递归（特殊的递归或复杂的递归）。
-   还是去找重复性（最近的重复性（怎么构造怎么分解-分治 & 回溯），最优的重复性-动态规划）
-
-b、回溯算法也叫试探法，它是一种系统地搜索问题的解的方法。
-```
-用回溯算法解决问题的一般步骤：
-1、 针对所给问题，定义问题的解空间，它至少包含问题的一个（最优）解。
-
-2 、确定易于搜索的解空间结构,使得能用回溯法方便地搜索整个解空间 。
-
-3 、以深度优先的方式搜索解空间，并且在搜索过程中用剪枝函数避免无效搜索。
-```
-c、分治 常见适用模板
-```
-// Java
-private static int divide_conquer(Problem problem, ) {
-  // recursion terminator 比如到达叶子节点
-  if (problem == NULL) {
-    int res = process_last_result();
-    return res;     
-  }
   
-  // process current problem
-       // prepare data 
-       data = prepare_data(problem) 
-       subProblems = split_problem(problem)
-  // drill down
-       // conquer subproblems
-       res0 = divide_conquer(subProblems[0])
-       res1 = divide_conquer(subProblems[1])
+```
+//Java
+public List<List<Integer>> levelOrder(TreeNode root) {
+    List<List<Integer>> allResults = new ArrayList<>();
+    if(root==null){
+        return allResults;
+    }
+    travel(root,0,allResults);
+    return allResults;
+}
 
-       // process and generate the final result (merge)
-       result = process_result(res0, res1);
-  
-  // revert the current level status
-  return result;
+private void travel(TreeNode root,int level,List<List<Integer>> results){
+    // terminator
+    if(results.size()==level){
+        results.add(new ArrayList<>());
+    }
+    // process current node here
+    results.get(level).add(root.val);
+    
+    // drill down
+    if(root.left!=null){
+        travel(root.left,level+1,results);
+    }
+    if(root.right!=null){
+        travel(root.right,level+1,results);
+    }
 }
 ```
-[递归状态树](split-conquer.png "split")
+
+### 2、BFS 代码模板
+```
+//Java
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
+}
+
+public List<List<Integer>> levelOrder(TreeNode root) {
+    List<List<Integer>> allResults = new ArrayList<>();
+    if (root == null) {
+        return allResults;
+    }
+    Queue<TreeNode> nodes = new LinkedList<>();
+    nodes.add(root);
+    while (!nodes.isEmpty()) {
+        int size = nodes.size();
+        List<Integer> results = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            TreeNode node = nodes.poll();
+            results.add(node.val);
+            if (node.left != null) {
+                nodes.add(node.left);
+            }
+            if (node.right != null) {
+                nodes.add(node.right);
+            }
+        }
+        allResults.add(results);
+    }
+    return allResults;
+}
+```
 
 ## 题型记录：
 Week01-Day22
