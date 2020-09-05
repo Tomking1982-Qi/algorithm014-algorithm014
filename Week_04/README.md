@@ -122,10 +122,12 @@ Week01-Day25
 https://leetcode-cn.com/problems/lemonade-change/description/
 
 Week01-Day26
-
+岛屿数量: leetcode-200
+https://leetcode-cn.com/problems/number-of-islands/
 
 Week01-Day27
-
+有效的完全平方数: leetcode-367
+https://leetcode-cn.com/problems/valid-perfect-square/
 
 Week01-Day28
 
