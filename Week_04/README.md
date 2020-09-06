@@ -10,8 +10,16 @@
 ## 心得体会：
 
 ```
+上周更新
+1、对于本周涉及到回溯的题目没有非常的理解透彻，下周还需要继续花点时间练习和巩固。（已巩固， 需要持续）
+2、对递归、分治和回溯的概念和实现模板（如下）及相关题型，已经有所掌握，后期可以再巩固加强。（以巩固， 需要持续）
+3、高频题目汇集册 和 脑图 更新的进度，还需要同步完善，本周这块有点薄弱。（TODO In Progress）
+
 本周更新
-1、
+1、本周的题目相对上周，不是非常难理解，所以基本能独立完成Home Work 和 Daily examination questions。 （对自己的自信心是一次提升）
+2、虽然本周的完成度还不错，但是以后还是需要加强一系列题目的练习，比如：岛屿问题、股票问题、跳跃游戏问题、单词接龙 等。
+3、下周有时间的话还是多巩固一下前面题型的回顾与总结，或是对第六周能简单预习一下。
+4、学习了四周，对自己能继续坚持，还是非常满意的，希望以后能是一种习惯，达到良性循环的目标。
 
 加油吧！！！
 
@@ -42,7 +50,12 @@ D、贪心算法 & 回溯 & 动态规划 简单区分
 回溯：能够回退
 动态规划：最优判断 + 回退
 
-二分法：    
+E、二分查找理论基础
+前提条件
+a、目标函数单调性（单调递增 或者 递减）
+b、存在上下界（bounded）
+c、能够通过索引访问（index accessible）
+比如: LC-69. x 的平方根问题
    
 ```
 
@@ -134,10 +147,32 @@ public List<List<Integer>> levelOrder(TreeNode root) {
 
 ```
 
-### 4、二分法
+### 4、二分查找 (必须是有序的)
+前提条件
+a、目标函数单调性（单调递增 或者 递减）
+
+b、存在上下界（bounded）
+
+c、能够通过索引访问（index accessible）
+
 ```
-
-
+二分查找代码模板
+// Java
+public int binarySearch(int[] array, int target) {
+    int left = 0, right = array.length - 1, mid;
+    while (left <= right) {
+        mid = (right - left) / 2 + left;
+        // mid =  (left + right) >>> 1;
+        if (array[mid] == target) {
+            return mid;
+        } else if (array[mid] > target) {
+            right = mid - 1;
+        } else {
+            left = mid + 1;
+        }
+    }
+    return -1;
+}
 ```
 
 ## 题型记录：
