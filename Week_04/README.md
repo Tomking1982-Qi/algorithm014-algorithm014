@@ -130,6 +130,8 @@ Week01-Day27
 https://leetcode-cn.com/problems/valid-perfect-square/
 
 Week01-Day28
+多数元素: leetcode-169
+https://leetcode-cn.com/problems/majority-element/
 
 
 
