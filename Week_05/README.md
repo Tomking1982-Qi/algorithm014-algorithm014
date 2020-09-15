@@ -27,12 +27,12 @@ Free Note:
 
 ## 题型记录：
 Week06-Day29
-和为K的子数组: leetcode-560
-https://leetcode-cn.com/problems/subarray-sum-equals-k/
+单词接龙: leetcode-127
+https://leetcode-cn.com/problems/word-ladder/description/
 
 Week06-Day30
-多数元素: leetcode-322
-https://leetcode-cn.com/problems/majority-element/
+和为K的子数组: leetcode-560
+https://leetcode-cn.com/problems/subarray-sum-equals-k/
 
 Week06-Day31
 模拟行走机器人: leetcode-874
