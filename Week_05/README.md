@@ -40,7 +40,7 @@ https://leetcode-cn.com/problems/walking-robot-simulation/description/
 
 Week06-Day32
 最大子序和: leetcode-53
-https://leetcode-cn.com/problems/
+https://leetcode-cn.com/problems/maximum-subarray/submissions/
 
 Week06-Day33
 最长公共子序列: leetcode-1143
