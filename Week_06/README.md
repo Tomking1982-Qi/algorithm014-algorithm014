@@ -24,8 +24,6 @@ Free Note:
 ## Tips:
 
 
-### 1、DFS 代码模板
- 
 
 ## 题型记录：
 Week06-Day36
@@ -41,15 +39,20 @@ Week06-Day38
 https://leetcode-cn.com/problems/house-robber-ii/description/
 
 Week06-Day39
-
+N叉树的前序遍历: leetcode-589
+https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/description/
 
 Week06-Day40
-
+矩形区域不超过 K 的最大数值和: leetcode-363   
+https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/
 
 Week06-Day41
-
+搜索旋转排序数组: leetcode-33
+https://leetcode-cn.com/problems/search-in-rotated-sorted-array/
 
 Week06-Day42
+单词搜索 II: leetcode-212
+https://leetcode-cn.com/problems/word-search-ii/
 
 
 
