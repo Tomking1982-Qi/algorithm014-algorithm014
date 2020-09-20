@@ -18,10 +18,50 @@
 
 
 Free Note:
-   
-```
+1、题型-最小路径和
+时间复杂度：O(m * n)
+状态存储：二维数组 
+递推方程：
+grid[i][j] += Math.min(grid[i][j-1], grid[i -1][j]);
 
-## Tips:
+2、题型-零钱转换：动态规划：自下而上
+时间复杂度：O(Sn）
+状态存储：一维数组 
+递推方程：
+dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+
+3、题型- 最长公共子序列
+时间复杂度：O(m* n）
+状态存储：二维数组 
+递推方程：
+if (rowChar == colChar) {
+    table[row][col] = table[row - 1][col -1] + 1;
+} else {
+   table[row][col] = Math.max(table[row][col -1], table[row-1][col]);
+}
+
+4、题型- 不同路径
+时间复杂度：O(m* n）
+状态存储：一维数组 
+递推方程：
+path[i][j] = path[i-1][j] + path[i][j-1];
+Or
+cur[j] += cur[j-1];
+
+5、题型- 不同路径 II
+时间复杂度：O(m* n）
+状态存储：一维数组 
+递推方程：
+path[i][j] = path[i-1][j] + path[i][j-1];
+Or
+cur[j] += cur[j-1];
+
+6、打家劫舍- LC62
+时间复杂度：O(n）
+状态存储：不需要独立创建数组
+递推方程：
+nums[i] = Math.max(nums[i -1], (nums[i] + nums[i - 2]));
+
 
 
 
