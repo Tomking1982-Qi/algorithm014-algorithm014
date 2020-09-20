@@ -12,10 +12,24 @@
 ```
 本周更新
 1、主要复习了最近一周已做题目
-2、DP问题思路：就是找最优子结构（分治得到子问题，）。
-3、DP问题实现：最优子结构对应的动态方程 或是 递推方程。
+2、DP问题思路：就是找最优子结构（在分治得到子问题基础之上寻找最优子问题后，归纳为DP方程（比传统递归和分治，时间和空间复杂度都大大降低））
+3、DP问题实现：最优子结构 到 对应的动态方程 或是 递推方程。
+4、DP问题还是比较难的，特别是对dp方程的推敲和论证过程。这就需要大量的练习和思维导图配合，多练习多记忆。加油吧！
 
+```
 
+## Tips:
+
+```
+DP定义：
+1、https://en.wikipedia.org/wiki/Dynamic_programming
+2、“Simlifying a complicated problem by breaking it down into simpler sub-problems” (in a recursive manner)
+3、Divide & Conquer + Optimal substructure (分治 + 最优子结构)
+
+DP关键点：
+1、动态规划和递归或者分治没有根本上的区别（关键看有无最优的子结构）
+2、动态规划和递归或者分治共性：找到重复的子问题
+3、动态规划和递归或者分治差异性：DP含有最优子结构、中途可以淘汰次优解
 
 Free Note:
 感触：
@@ -24,6 +38,9 @@ b、找到最近最简方法，将其拆解成可重复解决的问题
 c、数学归纳法思维（抵制人肉递归）
 d、本质：寻找重复性 -> 计算机指令集（if else, while、 for loop、 recursion等）
 
+```
+## 题型列表：
+```
 1、题型-最小路径和
 时间复杂度：O(m * n)
 状态存储：二维数组 
@@ -67,7 +84,7 @@ cur[j] += cur[j-1];
 状态存储：不需要独立创建数组
 递推方程：
 nums[i] = Math.max(nums[i -1], (nums[i] + nums[i - 2]));
-
+```
 
 分治模板：
 https://shimo.im/docs/zvlDqLLMFvcAF79A/read
