@@ -18,6 +18,12 @@
 
 
 Free Note:
+感触：
+a、人肉递归低效、很累
+b、找到最近最简方法，将其拆解成可重复解决的问题
+c、数学归纳法思维（抵制人肉递归）
+d、本质：寻找重复性 -> 计算机指令集（if else, while、 for loop、 recursion等）
+
 1、题型-最小路径和
 时间复杂度：O(m * n)
 状态存储：二维数组 
@@ -63,7 +69,11 @@ cur[j] += cur[j-1];
 nums[i] = Math.max(nums[i -1], (nums[i] + nums[i - 2]));
 
 
+分治模板：
+https://shimo.im/docs/zvlDqLLMFvcAF79A/read
 
+递归模板：
+https://shimo.im/docs/EICAr9lRPUIPHxsH/read
 
 ## 题型记录：
 Week06-Day36
