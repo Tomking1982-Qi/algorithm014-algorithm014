@@ -50,14 +50,20 @@ https://shimo.im/docs/zvlDqLLMFvcAF79A/read
 递归模板：
 https://shimo.im/docs/EICAr9lRPUIPHxsH/read
 
+Tire 树代码模板:
+https://leetcode-cn.com/problems/implement-trie-prefix-tree/
+
+
 ## 题型记录：
 Week06-Day43
-搜索二维矩阵 II : leetcode-208
+搜索二维矩阵 II : leetcode-240
 https://leetcode-cn.com/problems/implement-trie-prefix-tree/
 
 
 Week06-Day44
-
+实现 Trie (前缀树): leetcode-208
+搜索二维矩阵 II 
+https://leetcode-cn.com/problems/implement-trie-prefix-tree/
 
 
 Week06-Day45
