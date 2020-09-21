@@ -21,15 +21,18 @@
 ## Tips:
 
 ```
-DP定义：
-1、https://en.wikipedia.org/wiki/Dynamic_programming
-2、“Simlifying a complicated problem by breaking it down into simpler sub-problems” (in a recursive manner)
-3、Divide & Conquer + Optimal substructure (分治 + 最优子结构)
+1、字典树的数据结构：
+字典树，即Trie树，又称单词查找树或键树，是一种树形结构。典型应用是用户统计和排序大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计
+它的优点是：最大限度地减少无谓的字符串比较，查询效率比哈希表高。
 
-DP关键点：
-1、动态规划和递归或者分治没有根本上的区别（关键看有无最优的子结构）
-2、动态规划和递归或者分治共性：找到重复的子问题
-3、动态规划和递归或者分治差异性：DP含有最优子结构、中途可以淘汰次优解
+2、字典树的核心思想
+a、Trie树的核心思想是空间换时间
+b、利用字符串的公共前缀来降低查询时间的开销以达到提高效率的目的
+
+3、字典树的基本性质
+a、结点本身不存完整单词；
+b、从根结点到某一结点，路径上经过的字符连接起来，为该结点对应的字符串；
+c、每个结点的所有子结点路径代表的字符都不相同
 
 Free Note:
 感触：
