@@ -21,6 +21,12 @@
 ## Tips:
 
 ```
+
+```
+
+### 字典树:
+
+```
 1、字典树的数据结构：
 字典树，即Trie树，又称单词查找树或键树，是一种树形结构。典型应用是用户统计和排序大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计
 它的优点是：最大限度地减少无谓的字符串比较，查询效率比哈希表高。
@@ -84,6 +90,47 @@ c、每个结点的所有子结点路径代表的字符都不相同
         }
         return node;
     }
+```
+
+### 并查集:(Disjoint Set)
+
+```
+1、场景？
+a、组团配对问题
+b、Group or not?
+
+2、基本操作：
+a、makeSet(s): 建立一个新的并查集，其中包含s个单元素集合。
+b、unionSet(x, y):把元素x和元素y所在的集合合并，要求x和y所在的集合不相交，如果相交则不合并。
+c、find(x): 找到元素x所在的集合的代表，该操作也可以用于判断两个元素是否位于同一个集合，只要将它们各自的代表比较一下就可以了。
+
+3、并查集模板：https://shimo.im/docs/VtcxL0kyp04OBHak/read
+class UnionFind { 
+	private int count = 0; 
+	private int[] parent; 
+	public UnionFind(int n) { 
+		count = n; 
+		parent = new int[n]; 
+		for (int i = 0; i < n; i++) { 
+			parent[i] = i;
+		}
+	} 
+	public int find(int p) { 
+		while (p != parent[p]) { 
+			parent[p] = parent[parent[p]]; 
+			p = parent[p]; 
+		}
+		return p; 
+	}
+	public void union(int p, int q) { 
+		int rootP = find(p); 
+		int rootQ = find(q); 
+		if (rootP == rootQ) return; 
+		parent[rootP] = rootQ; 
+		count--;
+	}
+}
+
 
 Free Note:
 感触：
@@ -93,6 +140,8 @@ c、数学归纳法思维（抵制人肉递归）
 d、本质：寻找重复性 -> 计算机指令集（if else, while、 for loop、 recursion等）
 
 ```
+
+
 ## 题型列表：
 ```
 
@@ -130,13 +179,16 @@ https://leetcode-cn.com/problems/maximum-product-subarray/
 
 
 Week06-Day47
-
+单词接龙 II: leetcode-126
+https://leetcode-cn.com/problems/word-ladder-ii/
 
 Week06-Day48
-
+最接近的三数之和: leetcode-16
+https://leetcode-cn.com/problems/3sum-closest/
 
 Week06-Day49
-
+括号生成: leetcode-22
+https://leetcode-cn.com/problems/generate-parentheses/
 
 
 
