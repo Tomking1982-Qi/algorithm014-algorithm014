@@ -162,21 +162,17 @@ Week08-Day50
 朋友圈: leetcode-547
 https://leetcode-cn.com/problems/friend-circles/
 
-
 Week08-Day51
 平方数之和: leetcode-633
 https://leetcode-cn.com/problems/sum-of-square-numbers/
-
 
 Week08-Day52
 打家劫舍: leetcode-198
 https://leetcode-cn.com/problems/house-robber/
 
-
 Week08-Day53
 颠倒二进制位: leetcode-190
 https://leetcode-cn.com/problems/reverse-bits/
-
 
 Week08-Day54
 单词接龙 II: leetcode-126
@@ -187,8 +183,34 @@ Week08-Day55
 https://leetcode-cn.com/problems/3sum-closest/
 
 Week08-Day56
-括号生成: leetcode-22
-https://leetcode-cn.com/problems/generate-parentheses/
+最长重复子数组: leetcode-718
+https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/
+
+Week08-Day57
+字符串中的第一个唯一字符: leetcode-387
+https://leetcode-cn.com/problems/first-unique-character-in-a-string/
+
+Week08-Day58
+不同路径: leetcode-62
+https://leetcode-cn.com/problems/unique-paths/
+
+Week08-Day59
+反转字符串II: leetcode-541
+https://leetcode-cn.com/problems/reverse-string-ii/
+
+Week09-Day60
+最长上升子序列: leetcode-300
+https://leetcode-cn.com/problems/longest-increasing-subsequence/
+
+Week09-Day61
+两整数之和: leetcode-371
+https://leetcode-cn.com/problems/sum-of-two-integers/
+
+
+Week09-Day62
+
+
+Week09-Day63
 
 
 
