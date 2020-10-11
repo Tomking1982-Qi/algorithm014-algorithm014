@@ -43,118 +43,19 @@ a、结点本身不存完整单词；
 b、从根结点到某一结点，路径上经过的字符连接起来，为该结点对应的字符串；
 c、每个结点的所有子结点路径代表的字符都不相同
 
-4、字典树模板: https://shimo.im/docs/DP53Y6rOwN8MTCQH/read
-
-    private boolean isEnd;
-    private Trie[] next;
-    /** Initialize your data structure here. */
-    public Trie() {
-        next = new Trie[26];
-        isEnd = false;
-    }
-    
-    /** Inserts a word into the trie. */
-    public void insert(String word) {
-        if (word == null || word.length() ==0) {
-            return;
-        }
-        Trie curr = this;
-        char[] words = word.toCharArray();
-        for (int i = 0; i < words.length; i++) {
-            int n = words[i] - 'a';
-            if (curr.next[n] == null) {
-                curr.next[n] = new Trie();
-            }
-            curr = curr.next[n];
-        }
-        curr.isEnd = true;
-    }
-    
-    /** Returns if the word is in the trie. */
-    public boolean search(String word) {
-        Trie node = searchPrefix(word);
-        return node != null && node.isEnd;
-    }
-    
-    /** Returns if there is any word in the trie that starts with the given prefix. */
-    public boolean startsWith(String prefix) {
-        Trie node = searchPrefix(prefix);
-        return node != null;
-    }
-
-    private Trie searchPrefix(String word) {
-        Trie node = this;
-        char[] words = word.toCharArray();
-        for (int i = 0;i < words.length;i++) {
-            node = node.next[words[i] - 'a'];
-            if (node == null) {
-                return null;
-            }
-        }
-        return node;
-    }
-```
-
-### 并查集:(Disjoint Set)
+### 排序算法:
 
 ```
-1、场景？
-a、组团配对问题
-b、Group or not?
-
-2、基本操作：
-a、makeSet(s): 建立一个新的并查集，其中包含s个单元素集合。
-b、unionSet(x, y):把元素x和元素y所在的集合合并，要求x和y所在的集合不相交，如果相交则不合并。
-c、find(x): 找到元素x所在的集合的代表，该操作也可以用于判断两个元素是否位于同一个集合，只要将它们各自的代表比较一下就可以了。
-
-3、并查集模板：https://shimo.im/docs/VtcxL0kyp04OBHak/read
-class UnionFind { 
-	private int count = 0; 
-	private int[] parent; 
-	public UnionFind(int n) { 
-		count = n; 
-		parent = new int[n]; 
-		for (int i = 0; i < n; i++) { 
-			parent[i] = i;
-		}
-	} 
-	public int find(int p) { 
-		while (p != parent[p]) { 
-			parent[p] = parent[parent[p]]; 
-			p = parent[p]; 
-		}
-		return p; 
-	}
-	public void union(int p, int q) { 
-		int rootP = find(p); 
-		int rootQ = find(q); 
-		if (rootP == rootQ) return; 
-		parent[rootP] = rootQ; 
-		count--;
-	}
-}
-
-
-Free Note:
-感触：
-a、
-
+1、比较类排序：
+通过比较来决定元素间的相对次序（传入comparator），由于其时间复杂度不能突破O(nlogn),因此也称为非线性时间比较类排序
+2、非比较类排序：
+不通过比较来决定元素间的相对次序，它可以突破基于比较排序的时间下届，比线性时间运算，因此也称为线性时间非比较类排序（一般对于整型相关的数据类型，并需要额外内存空间作为辅助）
 ```
-
 
 ## 题型列表：
 ```
 
 ```
-
-分治模板：
-https://shimo.im/docs/zvlDqLLMFvcAF79A/read
-
-递归模板：
-https://shimo.im/docs/EICAr9lRPUIPHxsH/read
-
-Tire 树代码模板:
-https://leetcode-cn.com/problems/implement-trie-prefix-tree/
 
 
 ## 题型记录：
