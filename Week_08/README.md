@@ -23,25 +23,14 @@
 
 ## Tips:
 
-```
-[快速排序代码示例](https://shimo.im/docs/TX9bDbSC7C0CR5XO/read)
-```
-[快速排序代码示例](https://shimo.im/docs/TX9bDbSC7C0CR5XO/read)
+a、[十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
+b、[快速排序代码示例](https://shimo.im/docs/TX9bDbSC7C0CR5XO/read)
+c、[归并排序代码示例）](https://shimo.im/docs/sDXxjjiKf3gLVVAU/read)
+d、[堆排序代码示例](https://shimo.im/docs/M2xfacKvwzAykhz6/read)
 
-### 字典树:
+### 位运算:
 ```
-1、字典树的数据结构：
-字典树，即Trie树，又称单词查找树或键树，是一种树形结构。典型应用是用户统计和排序大量的字符串（但不仅限于字符串），所以经常被搜索引擎系统用于文本词频统计
-它的优点是：最大限度地减少无谓的字符串比较，查询效率比哈希表高。
 
-2、字典树的核心思想
-a、Trie树的核心思想是空间换时间
-b、利用字符串的公共前缀来降低查询时间的开销以达到提高效率的目的
-
-3、字典树的基本性质
-a、结点本身不存完整单词；
-b、从根结点到某一结点，路径上经过的字符连接起来，为该结点对应的字符串；
-c、每个结点的所有子结点路径代表的字符都不相同
 ```
 
 ### 排序算法:
