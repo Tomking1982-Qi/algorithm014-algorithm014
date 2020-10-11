@@ -121,11 +121,12 @@ https://leetcode-cn.com/problems/sum-of-two-integers/
 
 
 Week09-Day62
-
+验证回文字符串II: leetcode-680
+https://leetcode-cn.com/problems/valid-palindrome-ii/
 
 Week09-Day63
-
-
+最长有效括号: leetcode-32
+https://leetcode-cn.com/problems/longest-valid-parentheses/submissions/
 
 
 
