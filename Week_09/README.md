@@ -12,9 +12,13 @@
 
 ## Tips:
 以下是参考了优秀学员的一些笔记，我觉得非常不错，这里参考一下，多加理解和练习！
+
 https://github.com/larry07/algorithm014-algorithm014/tree/master/Week_09
+
 https://github.com/super2502/algorithm014-algorithm014/blob/golang/Week_09/README-commit.md
+
 https://github.com/suncun/algorithm014-algorithm014/tree/master/Week_09
+
 https://github.com/yzsever/algorithm014-algorithm014/tree/master/Week_09
 
 
@@ -36,7 +40,8 @@ https://github.com/yzsever/algorithm014-algorithm014/tree/master/Week_09
    反人类。
    人的思维习惯，在现实中希望把每一个步骤自己都能看到和把控住，不然心里面会没底。
    对于『递归管好本层，制度兼顾衔接下层，最后整个体系就是完美的』，人类不适合于这样的思想。
-   	但是当你要处理复杂的问题，或者在复杂度公司里工作，或者在复杂的社会中工作，都是要用这样的一种管理方式——即同理可得，以此类推的方式。
+   但是当你要处理复杂的问题，或者在复杂度公司里工作，或者在复杂的社会中工作，
+   都是要用这样的一种管理方式——即同理可得，以此类推的方式。
    ```
 
 **本质都是寻找重复性->计算机指令集(for,while,递归调用)**，复杂的面试题，也是在10~20行就能解决的，关键是自己的代码功底和提炼重复性，同一个题，没有提炼出重复性，没有善用API，就可能写的又臭又长。。。
